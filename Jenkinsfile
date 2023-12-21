@@ -33,7 +33,8 @@ pipeline{
         }
         stage('add-readmefile'){
             steps{
-                sh "bash -x /var/lib/jenkins/workspace/jenkins-demo3"
+                sh "bash -x cp /var/lib/jenkins/workspace/jenkins-demo3/readmefolder"
+
             }
         }
     
