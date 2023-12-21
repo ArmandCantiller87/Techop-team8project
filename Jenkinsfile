@@ -31,6 +31,11 @@ pipeline{
                 echo "member5: erica"
             }
         }
+        stage('add-readmefile'){
+            steps{
+                sh " bash -x cp README.md readmefolder"
+            }
+        }
     
 	}
 }
