@@ -33,7 +33,7 @@ pipeline{
         }
         stage('add-readmefile'){
             steps{
-                sh " bash -x cp README.md readmefolder"
+                sh " bash -x cp README.md /etc/tmp"
             }
         }
     
